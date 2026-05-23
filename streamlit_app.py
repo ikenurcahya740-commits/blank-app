@@ -29,6 +29,14 @@ if st.button("Three cheers"):
     time.sleep(0.5)
     import streamlit as st
 
+option = st.selectbox(
+    "How would you like to be contacted?",
+    ("Email", "Home phone", "Mobile phone"),
+)
+
+st.write("You selected:", option)
+    import streamlit as st
+
 st.button("Reset", type="primary")
 if st.button("Say hello"):
     st.write("Why hello there")
