@@ -4,7 +4,8 @@ st.title("🎈 My new app")
 st.write(
     "Let's start building! For help and inspiration, head over to [docs.streamlit.io](https://docs.streamlit.io/)."
 ) 
-st write( import datetime
+st write(
+    import datetime
 import streamlit as st
 
 d = st.date_input("When's your birthday", datetime.date(2019, 7, 6))
