@@ -62,3 +62,8 @@ def cook_breakfast():
 
 if st.button("Cook breakfast"):
     cook_breakfast()
+
+option = st.selectbox(
+    "How would you like to be contacted?",
+    ("Email", "Home phone", "Mobile phone"),
+)
