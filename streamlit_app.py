@@ -16,3 +16,27 @@ import streamlit as st
 
 st.caption("This is a string that explains something above.")
 st.caption("A caption with _italics_ :blue[colors] and emojis :sunglasses:")
+import streamlit as st
+
+st.toast("Your edited image was saved!", icon="🙌🏻")
+import time
+import streamlit as st
+
+if st.button("Three cheers"):
+    st.toast("Hip!")
+    time.sleep(0.5)
+    st.toast("Hip!")
+    time.sleep(0.5)
+    st.toast("Hooray!", icon="🎉")
+    import time
+import streamlit as st
+
+def cook_breakfast():
+    msg = st.toast("Gathering ingredients...")
+    time.sleep(1)
+    msg.toast("Cooking...")
+    time.sleep(1)
+    msg.toast("Ready!", icon="🫕")
+
+if st.button("Cook breakfast"):
+    cook_breakfast()
