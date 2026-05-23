@@ -27,6 +27,10 @@ if st.button("Three cheers"):
     time.sleep(0.5)
     st.toast("Hip!")
     time.sleep(0.5)
+    option = st.selectbox(
+    "How would you like to be contacted?",
+    ("Email", "Home phone", "Mobile phone"),
+)
     import streamlit as st
 
 option = st.selectbox(
